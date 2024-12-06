@@ -2,7 +2,7 @@
 
 1. **Clone o repositório do projeto:**
    ```sh
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/gabrielsyphan/template-backend-proex-seja.git
    ```
 
 2. **Abra o projeto no IntelliJ IDEA:**
