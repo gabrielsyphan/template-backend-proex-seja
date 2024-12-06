@@ -1,0 +1,18 @@
+version: "2.4"
+
+services:
+  mysql-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mysql-db
+    ports:
+      - "3306:3306"
+    volumes:
+      - budokanryu_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: budokanryudb
+
+volumes:
+  budokanryu_data:

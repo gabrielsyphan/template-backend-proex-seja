@@ -1,0 +1,16 @@
+server:
+  error:
+    include-stacktrace: always
+  port: 2984
+
+spring:
+  application:
+    name: ${APP_NAME:prova_app}
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:provadb}?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&createDatabaseIfNotExist=true
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
